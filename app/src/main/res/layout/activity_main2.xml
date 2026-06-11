@@ -3,6 +3,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -96,13 +97,13 @@
         android:layout_height="56dp"
         android:layout_marginHorizontal="24dp"
         android:layout_marginTop="32dp"
+        android:backgroundTint="#8B5CF6"
         android:text="Guardar canción"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        android:backgroundTint="#8B5CF6"
-        app:layout_constraintTop_toBottomOf="@id/editTono"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/editTono" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

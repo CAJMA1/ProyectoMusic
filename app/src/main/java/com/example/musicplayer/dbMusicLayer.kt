@@ -27,10 +27,7 @@ class dbMusicLayer(context: Context) :
 
         val db = readableDatabase
 
-        val cursor = db.rawQuery(
-            "SELECT * FROM musiclayer",
-            null
-        )
+        val cursor = db.rawQuery("SELECT * FROM musiclayer ORDER BY position ASC",null)
         while (cursor.moveToNext()) {
             songs.add(
                 Song(
