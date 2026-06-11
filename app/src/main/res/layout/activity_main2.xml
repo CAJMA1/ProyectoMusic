@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F0F0F">
+
+    <!-- Título -->
+
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Agregar canción"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Título canción -->
+
+    <EditText
+        android:id="@+id/editTitulo"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="24dp"
+        android:hint="Título"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:backgroundTint="#8B5CF6"
+        app:layout_constraintTop_toBottomOf="@id/txtHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Artista -->
+
+    <EditText
+        android:id="@+id/editArtista"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="24dp"
+        android:hint="Artista"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:backgroundTint="#8B5CF6"
+        app:layout_constraintTop_toBottomOf="@id/editTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Duración -->
+
+    <EditText
+        android:id="@+id/editDuracion"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="24dp"
+        android:hint="Duración (seg)"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:backgroundTint="#8B5CF6"
+        app:layout_constraintTop_toBottomOf="@id/editArtista"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Tono -->
+
+    <EditText
+        android:id="@+id/editTono"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="24dp"
+        android:hint="Tono"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:backgroundTint="#8B5CF6"
+        app:layout_constraintTop_toBottomOf="@id/editDuracion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Botón Guardar -->
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Guardar canción"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:backgroundTint="#8B5CF6"
+        app:layout_constraintTop_toBottomOf="@id/editTono"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
